@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="Ishan Patra">
+  <meta name="viewport" content="width=device-width">
+  <title>Ishan Patra - OOMS - High Banks - Metroparks - Mainpage</title>
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link href="Style CSS Files/glossary.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+        </button>
+
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Main Page</a></li>
+          <li class="active"><a href="about_highbanks.html">About Highbanks</a></li>
+          <li class="active"><a href="glossary.html">What does it mean?</a></li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <style>
+      /* Popup container */
+      .popup-container {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Popup content */
+      .popup-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* The close button */
+      .close-button {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close-button:hover,
+      .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body onload="showPopup()">
+
+    <!-- Popup -->
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-content">
+        <h2>Wait</h2>
+        <p>The given glossary is not in alphabetical order</p>
+        <button class="close-button" onclick="closePopup()">&times;</button>
+      </div>
+    </div>
+
+    <!-- Script to show/hide the popup -->
+    <script>
+      // Get the popup container
+      var popupContainer = document.getElementById("popupContainer");
+
+      // Show the popup
+      function showPopup() {
+        if (localStorage.getItem("popupShown") !== "true") {
+          popupContainer.style.display = "block";
+          localStorage.setItem("popupShown", "true");
+        }
+      }
+
+      // Close the popup
+      function closePopup() {
+        popupContainer.style.display = "none";
+      }
+    </script>
+    <h1>Glossary</h1>
+    <dl>
+      <dt>Acadian Mountains</dt>
+      
+        <ul>
+          <li>A mountain range located in northeastern North America.</li>
+        </ul>
+      
+      <dt>Appalachian Mountains</dt>
+      
+        <ul>
+          <li>A large system of mountains in eastern North America.</li>
+        </ul>
+      
+      <dt>Banks (as in rivers)</dt>
+      
+        <ul>
+          <li>The sides of a river that contain the river bed and water.</li>
+        </ul>
+      
+      <dt>Columbus, Ohio</dt>
+      
+        <ul>
+          <li>The capital city of the state of Ohio, United States.</li>
+        </ul>
+      
+      <dt>Ohio State University</dt>
+      
+        <ul>
+          <li>A public research university located in Columbus, Ohio, United States.</li>
+        </ul>
+      
+      <dt>Concretions</dt>
+      
+        <ul>
+          <li>Hard, compact masses of mineral matter that are found in sedimentary rock.</li>
+        </ul>
+      
+      <dt>Deposition</dt>
+      
+        <ul>
+          <li>The process by which sediment is laid down in new locations.</li>
+        </ul>
+      
+      <dt>Erosion</dt>
+      
+        <ul>
+          <li>The process by which soil, rock, and other materials are worn away by wind, water, or other natural agents.</li>
+        </ul>
+      
+      <dt>Geological</dt>
+      
+        <ul>
+          <li>Relating to geology, the study of the Earth's structure, composition, and processes.</li>
+        </ul>
+      
+      <dt>Glacial</dt>
+      
+        <ul>
+          <li>Relating to glaciers or ice sheets, or to a period in which such ice masses were widespread.</li>
+        </ul>
+      
+      <dt>Limestone</dt>
+      
+        <ul>
+          <li>A sedimentary rock consisting mainly of calcium carbonate.</li>
+        </ul>
+      
+      <dt>Olentangy River</dt>
+      
+        <ul>
+          <li>A river in Ohio, United States.</li>
+        </ul>
+      
+      <dt>Recreation</dt>
+      
+        <ul>
+          <li>An activity done for enjoyment or leisure.</li>
+        </ul>
+      
+    </dl>
+    <dl>
+      <dt>Hiking</dt>
+      <ul>
+        <li>A form of exercise in which a person walks for an extended period in a natural setting, such as a park or mountain trail.</li>
+      </ul>
+      <dt>Fishing</dt>
+      <ul>
+        <li>The act of catching fish in a body of water using a fishing line, hook, and bait.</li>
+      </ul>
+      <dt>Picnicking</dt>
+      <ul>
+        <li>The act of enjoying a meal outdoors in a park or natural setting.</li>
+      </ul>
+      <dt>Shelter</dt>
+      <ul>
+        <li>A covered structure found in parks, typically used for picnicking or as a resting place.</li>
+      </ul>
+      <dt>Programs</dt>
+      <ul>
+        <li>Activities or events organized by a park or nature center.</li>
+      </ul>
+      <dt>Events</dt>
+      <ul>
+        <li>Special activities or occurrences, such as festivals or educational workshops, hosted by a park or nature center.</li>
+      </ul>
+      <dt>Nature Centers</dt>
+      <ul>
+        <li>Facilities dedicated to educating the public about the natural world and preserving the environment.</li>
+      </ul>
+      <dt>Habitat</dt>
+      <ul>
+        <li>The environment in which a particular species of plant or animal lives.</li>
+      </ul>
+      <dt>River</dt>
+      <ul>
+        <li>A large and often navigable stream of water that flows through a channel in the surface of the ground.</li>
+      </ul>
+      <dt>Waterfall</dt>
+      <ul>
+        <li>A cascade of water falling from a height, often formed by a river or stream.</li>
+      </ul>
+      <dt>Glacial</dt>
+      <ul>
+        <li>Relating to or caused by glaciers, or the slow movement of ice over land.</li>
+      </ul>
+      <dt>Forces</dt>
+      <ul>
+        <li>A physical influence or action that can change the motion of an object, cause stress or strain, or deform a material.</li>
+      </ul>
+      <dt>Sediment</dt>
+      <ul>
+        <li>Material, such as soil or sand, that has been eroded or deposited by wind, water, or ice and settled in layers on the bottom of a body of water or other surface.</li>
+      </ul>
+      <dt>Rocks</dt>
+      <ul>
+        <li>Solid masses of mineral matter that make up the Earth's crust and can be formed through processes such as volcanic activity or the accumulation and cementation of sediments.</li>
+      </ul>
+      <dt>Abrade</dt>
+      <ul>
+        <li>To wear away or erode a surface through friction or scraping.</li>
+      </ul>
+    </dl>
+    <dl>
+      <dt>Soil</dt>
+      <ul>
+        <li>The upper layer of the Earth's surface where plants grow, consisting of organic and inorganic materials.</li>
+      </ul>
+      <dt>Shale</dt>
+      <ul>
+        <li>A fine-grained sedimentary rock composed of compacted mud and clay.</li>
+      </ul>
+      <dt>Weathering</dt>
+      <ul>
+        <li>The breaking down of rocks and minerals at the Earth's surface due to exposure to the elements.</li>
+      </ul>
+      <dt>Climate</dt>
+      <ul>
+        <li>The average pattern of weather conditions, including temperature, humidity, and precipitation, over a long period of time in a particular region.</li>
+      </ul>
+      <dt>Topography</dt>
+      <ul>
+        <li>The physical features of a land surface, including its relief (elevation and depression), landforms, and surface drainage patterns.</li>
+      </ul>
+      <dt>Discharge rate</dt>
+      <ul>
+        <li>The volume of fluid (e.g. water) that flows past a given point in a unit of time.</li>
+      </ul>
+      <dt>Gradient</dt>
+      <ul>
+        <li>The rate of change of elevation or slope of a land surface.</li>
+      </ul>
+      <dt>Velocity</dt>
+      <ul>
+        <li>The speed of a fluid (e.g. water) at a given point.</li>
+      </ul>
+      <dt>Historical</dt>
+      <ul>
+        <li>Relating to the past and having a bearing on the history of a particular place or region.</li>
+      </ul>
+      <dt>Watershed</dt>
+      <ul>
+        <li>The area of land that drains into a particular body of water, such as a river, lake, or ocean.</li>
+      </ul>
+      <dt>Documents</dt>
+      <ul>
+        <li>Recorded information in any format, including written, digital, and audiovisual.</li>
+      </ul>
+      <dt>Ohio Valley</dt>
+      <ul>
+        <li>A region in the eastern United States that includes parts of Ohio, Indiana, Illinois, Pennsylvania, West Virginia, and Kentucky, and is drained by the Ohio River.</li>
+      </ul>
+      <dt>Abrade</dt>
+      <ul>
+        <li>To wear away or erode the surface of a rock or other material by friction or scraping, typically as a result of wind, water, or ice.</li>
+      </ul>
+    </dl>
+  </body>
+    <footer>
+  <div style="text-align: right;">
+    <div style="display: flex;">
+      <div class="left-element">
+        <p style="color: white;">This webpage was created by <a>Ishan Patra</a></p>
+        <p style="color: white;"><a href="mailto:ishanpatra9@gmail.com">ishanpatra9@gmail.com</a></p>
+      </div>
+      <div class="right-element">
+        <p style="color: white;">Copyright © 2023 By Ishan</p>
+        <p style="color: white;">All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
