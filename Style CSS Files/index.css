@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+dl{
+  padding-left: 5px;
+}
+dt {
+  padding-left: 10px;
+}
+dd {
+  padding-left: 20px;
+}
+footer{
+  background: black;
+  border: #858585;
+}
+
+.left-element {
+  float: right;
+  width: 90%;
+}
+
+.right-element {
+  float: right;
+  width: 10%;
+}

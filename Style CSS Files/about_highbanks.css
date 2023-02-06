@@ -1,0 +1,14 @@
+footer{
+  background: black;
+  border: #858585;
+}
+
+.left-element {
+  float: right;
+  width: 90%;
+}
+
+.right-element {
+  float: right;
+  width: 10%;
+}
