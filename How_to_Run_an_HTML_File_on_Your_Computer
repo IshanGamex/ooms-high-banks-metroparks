@@ -5,8 +5,8 @@ How to Run an HTML File on Your Computer:
   2.Open your file explorer(windows)/finder(mac) and find the .zip file.
 
   3.Unzip the file to access the contents.
-    If you have windows, right-click the file and select "extract all".
-    If you have mac, 
+    If you have windows or chromebook, right-click the file and select "extract all".
+    If you have mac, double-click the . zip file
   3.Find the "index.html" file and either right you have saved, select it and click "Open".
 
 Your HTML file will now be displayed in the web browser and you can view the web page just like any other web page.
